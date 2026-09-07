@@ -1,0 +1,212 @@
+/* Navbar Styles - Orange & Black Theme */
+.navbar-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  z-index: 1000;
+  transition: all var(--transition-base);
+  background: transparent;
+}
+
+.navbar-header.scrolled {
+  background: rgba(250, 100, 50, 0.92);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Brand Logo - Big & Distinctive */
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-family: var(--font-heading);
+  text-decoration: none;
+  transition: transform var(--transition-fast);
+}
+
+.brand-logo:hover {
+  transform: translateY(-1px);
+}
+
+.brand-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 1.2rem;
+  letter-spacing: -0.05em;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  border: 1.5px solid var(--orange-accent);
+  flex-shrink: 0;
+}
+
+.brand-name {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.55rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.brand-name-first {
+  color: #000000;
+}
+
+.brand-name-last {
+  color: #000000;
+  position: relative;
+}
+
+.brand-name-last::after {
+  content: '.';
+  color: var(--orange-accent);
+}
+
+/* Desktop Navigation */
+.nav-links-desktop {
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+}
+
+.nav-link {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.82);
+  transition: all var(--transition-fast);
+  position: relative;
+  padding: 0.5rem 0.25rem;
+  letter-spacing: -0.01em;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2.5px;
+  background: #000000;
+  transition: width var(--transition-base);
+  border-radius: var(--radius-full);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #000000;
+}
+
+.nav-link.active::after,
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Mobile Toggle */
+.mobile-toggle {
+  display: none;
+  background: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: var(--radius-md);
+  color: #ffffff;
+  padding: 0.55rem;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.mobile-toggle:hover {
+  background: var(--orange-accent);
+}
+
+/* Mobile Drawer */
+.mobile-menu {
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+  background: rgba(250, 100, 50, 0.98);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  padding: 2.25rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-slow);
+  z-index: 999;
+  border-bottom: 2px solid #000000;
+}
+
+.mobile-menu.open {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.mobile-link {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #000000;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  transition: color var(--transition-fast), padding-left var(--transition-fast);
+  letter-spacing: -0.02em;
+}
+
+.mobile-link:hover,
+.mobile-link.active {
+  color: #000000;
+  padding-left: 0.6rem;
+}
+
+.mobile-menu-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-top: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .nav-links-desktop {
+    display: none;
+  }
+  .mobile-toggle {
+    display: flex;
+  }
+  .navbar-actions .btn {
+    display: none;
+  }
+}
