@@ -29,7 +29,7 @@ A modern, responsive personal portfolio website built with **React.js**, **Vite*
 
 1. **Clone the repository**:
    ```bash
-   git clone <YOUR_GITHUB_REPO_URL>
+   git clone https://github.com/Shivam-anand01/Shivam-Anand.git
    cd "portfolio ensite"
    ```
 
@@ -56,13 +56,13 @@ A modern, responsive personal portfolio website built with **React.js**, **Vite*
 ### Option 1: Vercel (Recommended - 1 Click)
 1. Go to [vercel.com](https://vercel.com/) and log in with your GitHub account.
 2. Click **"Add New..."** -> **"Project"**.
-3. Import your GitHub repository.
-4. Click **Deploy**. Vercel will automatically build and assign a live URL (e.g. `your-portfolio.vercel.app`).
+3. Import your GitHub repository (`Shivam-Anand`).
+4. Click **Deploy**. Vercel will automatically build and assign a live URL (e.g. `https://shivam-anand.vercel.app`).
 
 ### Option 2: Netlify
 1. Go to [netlify.com](https://netlify.com/) and log in.
 2. Click **"Add new site"** -> **"Import an existing project"**.
-3. Connect your GitHub repository and click **Deploy site**.
+3. Connect your GitHub repository (`Shivam-Anand`) and click **Deploy site**.
 
 ---
 
@@ -71,4 +71,4 @@ A modern, responsive personal portfolio website built with **React.js**, **Vite*
 **Shivam Anand**
 - **Email**: [shivam.anand.163@gmail.com](mailto:shivam.anand.163@gmail.com)
 - **LinkedIn**: [linkedin.com/in/shivam-anand](https://linkedin.com)
-- **GitHub**: [github.com](https://github.com)
+- **GitHub**: [github.com/Shivam-anand01](https://github.com/Shivam-anand01)

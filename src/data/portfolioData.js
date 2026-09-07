@@ -25,9 +25,9 @@ export const personalInfo = {
 export const socialLinks = [
   {
     name: "GitHub",
-    url: "https://github.com",
+    url: "https://github.com/Shivam-anand01",
     icon: "Github",
-    label: "github.com/shivam-anand",
+    label: "github.com/Shivam-anand01",
   },
   {
     name: "LinkedIn",
@@ -94,7 +94,7 @@ export const projectsData = [
     detailedDescription: "Designed and engineered an IoT-enabled smart door locking mechanism powered by an ESP32 microcontroller. The system integrates secure wireless credential authentication, relay-driven electronic solenoid lock activation, status indicator LEDs, and a responsive telemetry dashboard for seamless keyless security and access monitoring.",
     image: null,
     technologies: ["ESP32", "Embedded C++", "IoT", "Relay Control", "Wi-Fi Telemetry", "Hardware Interfacing"],
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/Shivam-anand01/Shivam-Anand",
     liveUrl: null,
     highlights: [
       "Engineered ESP32 firmware with secure wireless authentication and access control logic",
@@ -145,7 +145,7 @@ export const educationData = [
 
 export const contactInfo = {
   email: "shivam.anand.163@gmail.com",
-  github: "https://github.com",
+  github: "https://github.com/Shivam-anand01",
   linkedin: "https://linkedin.com",
   location: "India",
   availability: "Available for full-time developer roles & projects",
